@@ -536,10 +536,10 @@ namespace sw
 	{
 		// Only enabled checkboxes appear in the POST
 		config.enableSSE = true;
-		config.enableSSE2 = false;
-		config.enableSSE3 = false;
-		config.enableSSSE3 = false;
-		config.enableSSE4_1 = false;
+		config.enableSSE2 = true;
+		config.enableSSE3 = true;
+		config.enableSSSE3 = true;
+		config.enableSSE4_1 = true;
 		config.disableServer = false;
 		config.forceWindowed = false;
 		config.complementaryDepthBuffer = false;
@@ -731,7 +731,7 @@ namespace sw
 		config.perspectiveCorrection = ini.getBoolean("Quality", "PerspectiveCorrection", true);
 		config.transcendentalPrecision = ini.getInteger("Quality", "TranscendentalPrecision", 2);
 		config.transparencyAntialiasing = ini.getInteger("Quality", "TransparencyAntialiasing", 0);
-		config.threadCount = ini.getInteger("Processor", "ThreadCount", DEFAULT_THREAD_COUNT);
+		config.threadCount = ini.getInteger("Processor", "ThreadCount", 1);
 		config.enableSSE = ini.getBoolean("Processor", "EnableSSE", true);
 		config.enableSSE2 = ini.getBoolean("Processor", "EnableSSE2", true);
 		config.enableSSE3 = ini.getBoolean("Processor", "EnableSSE3", true);
