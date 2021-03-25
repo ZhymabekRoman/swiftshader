@@ -33,7 +33,7 @@
 
 #undef max
 
-bool disableServer = true;
+bool disableServer = false;
 
 #ifndef NDEBUG
 unsigned int minPrimitives = 1;
